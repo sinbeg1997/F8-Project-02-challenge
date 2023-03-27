@@ -12,3 +12,89 @@ body {
 }
 
 /* Common */
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 186px;
+  padding: 11px 23px;
+  background: #2ac9bf;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  border: none;
+  color: #ffffff;
+}
+
+/* Header */
+
+.header {
+  /* margin-top: 52px; */
+  background: #ffffff;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -26px;
+  left: 0;
+}
+
+.header .body {
+  display: flex;
+  padding: 52px 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 127px;
+  height: 37px;
+  object-fit: cover;
+}
+
+.header .nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav li {
+  padding: 4px 20px;
+}
+
+.header .nav li a {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #2f3a3b;
+}
+
+.header .nav li.active a {
+  color: #2f3a3b;
+  font-weight: 600;
+}
+
+.header .btn-sign-in {
+  margin-right: 24px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #494949;
+}
+
+.header .btn-sign-up {
+  min-width: 108px;
+  border: 1px solid #1ebfc1;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #1ebfc1;
+}
