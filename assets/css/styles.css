@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --percent: 50%;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -27,14 +31,29 @@ a {
 .btn {
   display: inline-block;
   min-width: 186px;
-  padding: 11px 23px;
-  background: #2ac9bf;
+  padding: 20px 23px;
+  background: #1ebfc1;
   border-radius: 14px;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 1.5;
   border: none;
+  text-align: center;
   color: #ffffff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.heading {
+  font-weight: 700;
+  line-height: 1.16;
+  color: #0d1111;
+}
+
+.heading.lv1 {
+  font-size: 6.2rem;
 }
 
 /* Header */
@@ -92,9 +111,218 @@ a {
 
 .header .btn-sign-up {
   min-width: 108px;
+  padding: 11px 23px;
   border: 1px solid #1ebfc1;
   border-radius: 6px;
   background-color: transparent;
   font-size: 1.6rem;
   color: #1ebfc1;
+}
+
+/* Hero */
+
+.hero {
+  margin-top: 50px;
+  background: #ffffff;
+}
+
+.hero .body {
+  display: flex;
+  align-items: center;
+}
+
+.hero .content-block {
+  width: 39.2%;
+  margin-right: 72px;
+}
+
+.hero .content-block .sub-heading {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.hero .content-block .heading {
+  margin-top: 18px;
+}
+
+.hero .content-block .desc {
+  max-width: 374px;
+  margin-top: 46px;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: #9da6a5;
+}
+
+.hero .content-block .actions {
+  margin-top: 46px;
+}
+
+.hero .content-block .btn {
+  box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+}
+.hero .btn-watch {
+  margin-left: 50px;
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.hero .btn-watch img {
+  display: block;
+  margin: auto;
+  width: 14px;
+  height: 18px;
+}
+
+.hero .media-block {
+  width: 54.8%;
+  padding-left: 65px;
+}
+
+.hero .media-block .hero-img {
+  position: relative;
+  width: 576px;
+  height: 631px;
+  background: #e0f7f6;
+}
+
+.hero .media-block img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.hero .block-active-students {
+  position: absolute;
+  right: 45px;
+  bottom: 40px;
+  width: 207px;
+  height: 90px;
+  padding: 17px 35px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+}
+
+.hero .block-active-students h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0d1111;
+}
+
+.hero .block-active-students .avatars {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .block-active-students .avatar {
+  width: 33px;
+  height: 33px;
+  margin-left: -8px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero .block-active-students .quantity {
+  margin-left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1ebfc1;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.hero .block-schedules {
+  position: absolute;
+  bottom: 45px;
+  transform: translateX(-50%);
+  width: 124px;
+  padding: 16px 25px 23px;
+  background: #ffffff;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+}
+
+.hero .block-schedules h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0d1111;
+}
+
+.hero .block-schedules .progresses {
+  margin-top: 16px;
+}
+
+.hero .block-schedules .progress {
+  background: #edf1f5;
+  border-radius: 3px;
+  height: 6px;
+}
+
+.hero .block-schedules .progress.last {
+  width: 26px;
+  margin: 16px auto 0;
+}
+
+.hero .block-schedules .progress + .progress {
+  margin-top: 12px;
+}
+
+.hero .block-schedules .percent {
+  width: var(--percent);
+  background: #fb9899;
+  border-radius: 3px;
+  height: 100%;
+}
+
+.hero .block-courses {
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  display: flex;
+  align-items: center;
+  width: 157px;
+  height: 75px;
+  padding: 17px 25px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+}
+
+.hero .block-courses .course-img {
+  width: 36px;
+  height: 40px;
+  padding: 4px;
+  background: #ff8282;
+  border-radius: 6px 4px 4px 6px;
+}
+
+.hero .block-courses .separate {
+  margin-top: 24px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.hero .block-courses .info {
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0d1111;
 }
