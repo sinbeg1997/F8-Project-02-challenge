@@ -421,3 +421,133 @@ a {
 .features .feature-item:nth-child(3) .desc {
   max-width: 224px;
 }
+
+/* Courses */
+
+.courses {
+  margin-top: 130px;
+}
+
+.courses .sub-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.courses .heading {
+  margin-top: 18px;
+}
+
+.courses .top-content .row {
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courses .top-content .desc {
+  max-width: 525px;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: #767e7e;
+}
+
+.courses .top-content .btn-view {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  color: #1ebfc1;
+}
+
+.course-list {
+  margin-top: 79px;
+  display: flex;
+  gap: 47px;
+}
+
+.course-list .item {
+  position: relative;
+  width: 33.33%;
+}
+
+.course-list .item .thumb-link {
+  display: block;
+  position: relative;
+}
+
+.course-list .item .thumb-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d0efed;
+  opacity: 0.35;
+}
+
+.course-list .item .thumb {
+  width: 100%;
+  height: 393px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.course-list .item .info {
+  position: relative;
+  top: -71px;
+  z-index: 1;
+  margin: 0 auto;
+  width: calc(100% - 34px);
+  padding: 18px 25px 29px;
+  background: #ffffff;
+  box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.course-list .item .title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #0d1111;
+}
+
+.course-list .item .desc {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #9da6a5;
+}
+.course-list .item .info .desc:nth-of-type(1) {
+  margin-top: 16px;
+}
+
+.course-list .item .info .desc:nth-of-type(2) {
+  margin-top: 6px;
+}
+
+.course-list .item .info .desc:nth-of-type(3) {
+  margin-top: 18px;
+}
+
+.course-list .item .desc .price {
+  color: #0d1111;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.course-list .item .desc .quantity:not(:first-child) {
+  margin-left: 10px;
+}
+
+.course-list .item .desc .quantity::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1ebfc1;
+  margin-right: 10px;
+}
