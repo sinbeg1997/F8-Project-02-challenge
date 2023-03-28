@@ -48,12 +48,17 @@ a {
 
 .heading {
   font-weight: 700;
-  line-height: 1.16;
   color: #0d1111;
 }
 
 .heading.lv1 {
   font-size: 6.2rem;
+  line-height: 1.16;
+}
+
+.heading.lv2 {
+  font-size: 4.2rem;
+  line-height: 1.33;
 }
 
 /* Header */
@@ -67,11 +72,12 @@ a {
   position: sticky;
   top: -26px;
   left: 0;
+  z-index: 1;
 }
 
 .header .body {
   display: flex;
-  padding: 52px 0 0;
+  padding: 52px 0 18px;
   justify-content: space-between;
   align-items: center;
 }
@@ -122,7 +128,8 @@ a {
 /* Hero */
 
 .hero {
-  margin-top: 50px;
+  margin-top: 32px;
+  padding-bottom: 79px;
   background: #ffffff;
 }
 
@@ -325,4 +332,92 @@ a {
   font-size: 1rem;
   line-height: 1.5;
   color: #0d1111;
+}
+
+/* Features */
+
+.features {
+  margin-top: 130px;
+}
+
+.features .body {
+  width: 1024px;
+  max-width: 100%;
+}
+.features .feature-txt {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.features .heading {
+  margin-top: 18px;
+  width: 577px;
+}
+
+.features .top-content .desc {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #767e7e;
+  width: 590px;
+}
+
+.features .list {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-img {
+  width: 102px;
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+
+.feature-img img {
+  height: 48px;
+  object-fit: cover;
+}
+
+.features .feature-item:nth-child(1) .feature-img {
+  background: #ffc147;
+}
+
+.features .feature-item:nth-child(2) .feature-img {
+  background: #ff947a;
+}
+
+.features .feature-item:nth-child(3) .feature-img {
+  background: #bf83ff;
+}
+
+.feature-item .title {
+  margin-top: 26px;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #0d1111;
+}
+
+.feature-item .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.69;
+  color: #9da6a5;
+}
+
+.features .feature-item:nth-child(1) .desc {
+  max-width: 168px;
+}
+
+.features .feature-item:nth-child(2) .desc {
+  max-width: 223px;
+}
+
+.features .feature-item:nth-child(3) .desc {
+  max-width: 224px;
 }
