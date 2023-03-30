@@ -72,7 +72,7 @@ a {
   position: sticky;
   top: -26px;
   left: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header .body {
@@ -550,4 +550,39 @@ a {
   border-radius: 50%;
   background: #1ebfc1;
   margin-right: 10px;
+}
+
+/* Statistic */
+
+.statistic {
+  margin: 265px 0;
+}
+
+.statistic .body {
+  display: flex;
+  justify-content: space-between;
+  width: 862px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.statistic .quantity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistic .quantity {
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.5;
+  color: #0d1111;
+}
+
+.statistic .desc {
+  margin-top: 11px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #767e7e;
 }
