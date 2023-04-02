@@ -645,28 +645,31 @@ a {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 1px solid #2ac9bf;
-  color: #2ac9bf;
+  border: 1px solid transparent;
   border-radius: 50%;
-  background: transparent;
+  background: #2ac9bf;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .feedback-content .btn-control:hover {
-  border-color: transparent;
-  background: #2ac9bf;
-  color: #ffffff;
+  border-color: #2ac9bf;
+  background: #ffffff;
+  color: #2ac9bf;
 }
 
 .testimonials {
+  position: relative;
   width: 58%;
+  align-self: stretch;
 }
 
 .testimonials .testimonial {
+  position: absolute;
   border-radius: 50%;
 }
 
-.testimonials .testimonial .avatar {
+.testimonials .testimonial img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -693,5 +696,37 @@ a {
 }
 
 .testimonials .testimonial.avatar1 {
+  top: 107px;
+  right: 170px;
   background-color: #ff8282;
+}
+
+.testimonials .testimonial.avatar2 {
+  top: 19px;
+  right: 0px;
+  background-color: #bf83ff;
+}
+
+.testimonials .testimonial.avatar3 {
+  top: 0px;
+  left: 144px;
+  background-color: #1ebfc1;
+}
+
+.testimonials .testimonial.avatar4 {
+  top: 258px;
+  left: 0px;
+  background-color: #ffc147;
+}
+
+.testimonials .testimonial.avatar5 {
+  bottom: 0;
+  left: 212px;
+  background-color: #ff947a;
+}
+
+.testimonials .testimonial.avatar6 {
+  bottom: 29px;
+  right: 32px;
+  background-color: #b1dfdc;
 }
