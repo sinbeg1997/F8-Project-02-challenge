@@ -236,6 +236,7 @@ a {
   margin-left: -8px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: var(--avatar-color);
 }
 
 .hero .block-active-students .quantity {
@@ -729,4 +730,30 @@ a {
   bottom: 29px;
   right: 32px;
   background-color: #b1dfdc;
+}
+
+/* CTA Learning */
+
+.cta-learning {
+  margin-top: 130px;
+  background: #def6f5;
+}
+
+.cta-learning .body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  padding: 76px 0 88px 0;
+}
+
+.cta-learning .info .heading {
+  font-size: 4.2rem;
+  line-height: 1.5;
+}
+
+.cta-learning .info .desc {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #767e7e;
 }
